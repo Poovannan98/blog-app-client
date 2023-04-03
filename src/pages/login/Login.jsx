@@ -50,6 +50,11 @@ export default function Login() {
           Register
         </Link>
       </button>
+
+      <div>
+            <p>Please use email: <b>test@test.com</b><br/>
+            password: <b>test@123</b> for demo this app</p>
+          </div>
     </div>
   );
 }
