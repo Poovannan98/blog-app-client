@@ -52,8 +52,8 @@ export default function Login() {
       </button>
 
       <div>
-            <p>Please use email: <b>test@test.com</b><br/>
-            password: <b>test@123</b> for demo this app</p>
+            <p>Please use username: <b style="color:red;">test</b><br/>
+            password: <b style="color:red;">test@123</b> for demo this app</p>
           </div>
     </div>
   );
