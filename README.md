@@ -1,7 +1,7 @@
 # Description
 Blog app using MERN Stack in CURD Operation and Multer for uploading images to DB.
 
-#Prodution URL
+# Prodution URL
 
 https://poo-blog.netlify.app
 
