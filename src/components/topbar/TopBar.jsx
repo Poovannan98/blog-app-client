@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./topbar.css";
 
+
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
   const PF = `${process.env.REACT_APP_API}/images/`
@@ -10,6 +11,7 @@ export default function TopBar() {
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
   };
+  
   return (
     <div className="top">
       {/* <div className="topLeft">
@@ -26,13 +28,13 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
+            <Link className="link" to="/about"  >
               ABOUT
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
-              CONTACT
+            <Link className="link" to="/categories" >
+              CATEGORIES
             </Link>
           </li>
           <li className="topListItem">

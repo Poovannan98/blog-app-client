@@ -8,6 +8,9 @@ import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
+import Sidebar from "./components/sidebar/Sidebar";
+import About from "./components/sidebar/About";
+import Categories from "./components/sidebar/Categories";
 
 function App() {
   const { user } = useContext(Context);
@@ -17,6 +20,12 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route exact path="/categories">
+          <Categories />
         </Route>
         <Route path="/register">{user ? <Home /> : <Register />}</Route>
         <Route path="/login">{user ? <Home /> : <Login />}</Route>
